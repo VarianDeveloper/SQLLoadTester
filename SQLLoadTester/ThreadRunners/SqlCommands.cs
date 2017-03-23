@@ -30,7 +30,7 @@ namespace ThreadRunners
                     threadsList.Add(
                             new Thread(p =>
                             {
-                                CreateThread(command, user, userThread);
+                                CreateCommandThread(command, user, userThread);
                             }));
 
                     //update current user as ran
@@ -56,7 +56,7 @@ namespace ThreadRunners
         }
 
        
-        private static void CreateThread(string command, int userId, int threadId)
+        private static void CreateCommandThread(string command, int userId, int threadId)
         {
             var myConnection = new SqlConnection("user id=sa;" +
                                       "password=Sa_sqlboxpwd12345;server=10.4.194.152;" +

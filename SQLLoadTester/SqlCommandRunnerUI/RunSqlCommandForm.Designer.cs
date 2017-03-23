@@ -42,7 +42,7 @@
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(171, 267);
+            this.btnRun.Location = new System.Drawing.Point(256, 267);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(328, 267);
+            this.btnClose.Location = new System.Drawing.Point(505, 267);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 1;
@@ -72,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 65);
+            this.label2.Location = new System.Drawing.Point(39, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 3;
@@ -81,16 +81,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 104);
+            this.label3.Location = new System.Drawing.Point(42, 193);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.Size = new System.Drawing.Size(242, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Number if Users";
+            this.label3.Text = "Number if Users (with conection string credentials)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 143);
+            this.label4.Location = new System.Drawing.Point(551, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 13);
             this.label4.TabIndex = 5;
@@ -100,15 +100,16 @@
             // 
             this.tbConnectionString.Location = new System.Drawing.Point(171, 26);
             this.tbConnectionString.Name = "tbConnectionString";
-            this.tbConnectionString.Size = new System.Drawing.Size(470, 20);
+            this.tbConnectionString.Size = new System.Drawing.Size(547, 20);
             this.tbConnectionString.TabIndex = 6;
             this.tbConnectionString.Text = "user id=sa;password=Sa_sqlboxpwd12345;server=10.4.194.152;database=VARIAN";
             // 
             // tbCommand
             // 
             this.tbCommand.Location = new System.Drawing.Point(171, 65);
+            this.tbCommand.Multiline = true;
             this.tbCommand.Name = "tbCommand";
-            this.tbCommand.Size = new System.Drawing.Size(600, 20);
+            this.tbCommand.Size = new System.Drawing.Size(547, 83);
             this.tbCommand.TabIndex = 7;
             this.tbCommand.Text = "EXEC [dbo].[vp_syUpdateSessionStatus] @strHstryUserName = N\'SysAdmin\' ,@strHstryT" +
     "askName = N\'Scheduling\',@nDebug = 3, @strCompletePlanUID01 = N\'1.2.246.352.71.5." +
@@ -116,7 +117,7 @@
             // 
             // tbNumberUsers
             // 
-            this.tbNumberUsers.Location = new System.Drawing.Point(171, 101);
+            this.tbNumberUsers.Location = new System.Drawing.Point(290, 190);
             this.tbNumberUsers.Name = "tbNumberUsers";
             this.tbNumberUsers.Size = new System.Drawing.Size(41, 20);
             this.tbNumberUsers.TabIndex = 8;
@@ -124,7 +125,7 @@
             // 
             // tbNumberOfThreadsUsers
             // 
-            this.tbNumberOfThreadsUsers.Location = new System.Drawing.Point(171, 143);
+            this.tbNumberOfThreadsUsers.Location = new System.Drawing.Point(677, 190);
             this.tbNumberOfThreadsUsers.Name = "tbNumberOfThreadsUsers";
             this.tbNumberOfThreadsUsers.Size = new System.Drawing.Size(41, 20);
             this.tbNumberOfThreadsUsers.TabIndex = 9;
