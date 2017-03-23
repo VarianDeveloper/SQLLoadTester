@@ -56,6 +56,7 @@ namespace ThreadRunners
             }
         }
 
+       
         private static void CreateThread(string command, int userId, int threadId)
         {
             var myConnection = new SqlConnection("user id=sa;" +
