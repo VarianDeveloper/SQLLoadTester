@@ -12,7 +12,6 @@ namespace ThreadRunners
     {
         public void RunSqlCmdThread(string cmd = null, int users = 1, int threads = 1)
         {
-            //var command = @"select * from Person.Person";
             var command = cmd ?? @"select * from pt";
             var numberOfThreads = threads;
             var numberOfUsers = users;
@@ -34,7 +33,11 @@ namespace ThreadRunners
                             {
                                 CreateThread(command, user, userThread);
                             }));
+
+                    //update current user as ran
                     usersHash[nextUser] = true;
+
+                    //get next random user that wasn't ran yet
                     nextUser = GetRandomUserThread(usersHash, false);
                 }
 

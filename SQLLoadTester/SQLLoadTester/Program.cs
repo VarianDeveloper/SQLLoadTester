@@ -14,7 +14,11 @@ namespace SQLLoadTester
         {
             int defaultUsersNumber = 10;
             int defaultThreadsPerUser = 10;
-            string defaultCommand = "select * from pt";
+            string defaultCommand = "select * from sys.traces"; //"select * from pt";
+
+           var command1 = "EXEc [dbo].[vp_syUpdateSessionStatus] @strHstryUserName = N\'SysAdmin\'" +
+                          ",@strHstryTaskName = N\'Scheduling\',@nDebug = 3," +
+                          "@strCompletePlanUID01 = N\'1.2.246.352.71.5.339051055.1345.20080812155642\'";
 
             if (args.Length > 0)
             {
@@ -22,11 +26,8 @@ namespace SQLLoadTester
                 defaultUsersNumber = int.Parse(args[0]);
             }
 
-            //            for (var i = 0; i < defaultUsersNumber; i++)
-            //            {
-            //run command in endless loop with intervals of 1 sec
-            new ThreadRunners.SqlCommands().RunSqlCmdThread(defaultCommand, defaultUsersNumber, defaultThreadsPerUser);
-            //  }
+            //run
+            new ThreadRunners.SqlCommands().RunSqlCmdThread(command1, defaultUsersNumber, defaultThreadsPerUser);
         }
     }
 }
