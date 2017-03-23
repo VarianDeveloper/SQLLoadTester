@@ -110,9 +110,9 @@
             this.tbCommand.Name = "tbCommand";
             this.tbCommand.Size = new System.Drawing.Size(600, 20);
             this.tbCommand.TabIndex = 7;
-            this.tbCommand.Text = "EXEC [dbo].[vp_syUpdateSessionStatus] @strHstryUserName = N\\\'SysAdmin\\\' ,@strHstr" +
-    "yTaskName = N\\\'Scheduling\\\',@nDebug = 3, @strCompletePlanUID01 = N\\\'1.2.246.352." +
-    "71.5.339051055.1345.20080812155642\\\'";
+            this.tbCommand.Text = "EXEC [dbo].[vp_syUpdateSessionStatus] @strHstryUserName = N\'SysAdmin\' ,@strHstryT" +
+    "askName = N\'Scheduling\',@nDebug = 3, @strCompletePlanUID01 = N\'1.2.246.352.71.5." +
+    "339051055.1345.20080812155642\'";
             // 
             // tbNumberUsers
             // 
