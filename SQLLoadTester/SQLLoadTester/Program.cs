@@ -13,7 +13,7 @@ namespace SQLLoadTester
         static void Main(string[] args)
         {
             int defaultUsersNumber = 10;
-            int defaultThreadsPerUser = 10;
+            int defaultThreadsPerUser = 100;
             string defaultCommand = "select * from sys.traces"; //"select * from pt";
 
            var command1 = "EXEc [dbo].[vp_syUpdateSessionStatus] @strHstryUserName = N\'SysAdmin\'" +

@@ -17,7 +17,6 @@ namespace ThreadRunners
             var numberOfUsers = users;
 
             var usersHash = CreateUsersHash(numberOfUsers, numberOfThreads);
-            Console.WriteLine($"Total User Hash : {usersHash.Count}");
             try
             {
                 string nextUser = GetRandomUserThread(usersHash, false);
@@ -47,7 +46,7 @@ namespace ThreadRunners
                     thread.Start();
                 }
 
-                Console.WriteLine($"Total started: {threadsList.Count}");
+                Console.WriteLine($"Total threads started: {threadsList.Count}");
             }
 
             catch (Exception e)
