@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLLoadTester", "SQLLoadTester\SQLLoadTester.csproj", "{F9C68F6F-4292-41F2-9785-7B0BA2B581EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadRunners", "ThreadRunners\ThreadRunners.csproj", "{E74E02D5-5482-43B4-A510-5FD6C7938817}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadRunners.Test", "ThreadRunners.Test\ThreadRunners.Test.csproj", "{3C1D9894-9F7E-4216-894F-20F38AD187C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlCommandRunnerUI", "SqlCommandRunnerUI\SqlCommandRunnerUI.csproj", "{8858FD21-0E36-482C-B6D1-84E54D1D04B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3C1D9894-9F7E-4216-894F-20F38AD187C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C1D9894-9F7E-4216-894F-20F38AD187C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C1D9894-9F7E-4216-894F-20F38AD187C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8858FD21-0E36-482C-B6D1-84E54D1D04B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8858FD21-0E36-482C-B6D1-84E54D1D04B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8858FD21-0E36-482C-B6D1-84E54D1D04B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8858FD21-0E36-482C-B6D1-84E54D1D04B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
